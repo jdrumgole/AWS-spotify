@@ -1,5 +1,4 @@
-# AWS-spotify
-# Spotify data engineering end to end end project
+# Spotify Data Engineering End To End Project
 ## Overview
 The architecture of the project is shown here the data will be present in our staging layer then we'll be using
 AWS glue to build our ETL pipeline that will take a data from staging layer and
