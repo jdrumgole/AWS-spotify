@@ -38,5 +38,28 @@ Integration: Easily integrates with other AWS services like Glue and Athena for 
 Creating Buckets: Separates raw (staging) and processed data (data warehouse) to organize and manage data flow.
 Uploading Data: Stores the CSV files needed for the project.
 ## Glue ETL
+**Purpose**: Managed ETL (Extract, Transform, Load) service.
+**Why I Use It:**
+
+**ETL Automation:** Automates the extraction, transformation, and loading of data, reducing manual effort.
+Scalability: Automatically scales to handle large volumes of data.
+Data Catalog: Automatically catalogs data, making it easy to query and manage.
+**Detailed Steps:**
+
+ETL Pipeline Creation: Visually designs the data flow and transformation process.
+Data Transformation: Joins and processes multiple data sources into a coherent format.
+Data Cataloging: Uses Glue crawlers to create a metadata catalog that Athena can query.
+
+**Running the Glue Job**
+
+**Purpose:** Execute the data transformation pipeline.
+**Why We Use It:**
+
+Operationalize ETL: Runs the defined ETL processes, transforming raw data into a structured format for analysis.
+Resource Management: Defines computational resources required for the job, ensuring efficient execution.
+Detailed Steps:
+
+**IAM Role Configuration:** Provides Glue with the necessary permissions to access S3 buckets.
+Job Execution and Monitoring: Runs the job and monitors its progress to ensure successful data transformation.
 ## Crawler
 ## Quicksight
