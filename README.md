@@ -26,15 +26,15 @@ I preprocessed the five CSV files and built three CSV file out of it which is al
 ![Slide_16_9_1 (2)](https://github.com/user-attachments/assets/8a6e9424-8cce-4f68-9bda-825a0e0551ec)
 
 ## S3 Buckets
-Purpose: Scalable object storage for data.
+**Purpose**: Scalable object storage for data.
 
-Why I am Using It:
+**Why I am Using It:**
 
 Data Storage: Holds raw and processed data files, allowing scalable and durable storage.
 Cost-Effective: Only pay for what you use, which is beneficial for large datasets.
 Integration: Easily integrates with other AWS services like Glue and Athena for seamless data processing.
 
-Detailed Steps:
+**Detailed Steps:**
 Creating Buckets: Separates raw (staging) and processed data (data warehouse) to organize and manage data flow.
 Uploading Data: Stores the CSV files needed for the project.
 ## Glue ETL
