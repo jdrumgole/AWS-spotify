@@ -1,26 +1,17 @@
 # Spotify Data Engineering End To End Project
 ## Overview
-The architecture of the project is shown here the data will be present in our staging layer then we'll be using
-AWS glue to build our ETL pipeline that will take a data from staging layer and
-transfer into our data warehouse once our data warehouse is in
-place we'll be running a glue crawler that will create a database and populate
-a table for our database then we'll be using AWS athena to
-query a data present in a table once everything is set up we can
-use AWS quick site to to do a visualization and to gain a business
-Insight out of our data.
 
-the data set that will be using in this project is Spotify data set
-Insight out of our data.Tthe data set consist of five CSV files albums artist Spotify data Spotify
-features and Spotify tracks Spotify albums consist of details
-of all the albums tracks artist and the release date of the
-album Spotify artist consist of details of the artist name number of followers
-in the genre they sing in Spotify data consist of album ID album name album
-popularity artist Spotify features consist of
-danceability energy loudness mode
-speech liveliness and Valance of the music the tracks consist of track ID
-track popularity. the data is in raw format so lots of pre-processing will be
-required for this playlist I've already pre-processed the data and I'll be providing the data
-I preprocessed the five CSV files and built three CSV file out of it which is albums, artist,s and tracks. 
+In this project, we build an end-to-end data engineering pipeline using AWS services to process Spotify data. We start by storing raw CSV data in S3 buckets, then create an ETL pipeline with AWS Glue to transform and load the data into a data warehouse bucket. AWS Glue Crawlers automatically catalog the data, making it queryable with AWS Athena. Finally, we use AWS QuickSight to create visualizations based on Athena queries, providing business insights from the processed data. This project demonstrates a scalable, automated, and secure data processing workflow.
+
+In this project, we use several CSV files containing Spotify data for 2023:
+
+**Spotify Albums:** Contains details about albums, including album ID, album name, artist ID, and release date.
+**Spotify Artists:** Includes information about artists, such as artist ID, name, number of followers, and genre.
+**Spotify Tracks:** Lists track details, including track ID, track name, album ID, and track popularity.
+**Spotify Features:** Provides audio features of tracks like danceability, energy, loudness, mode, speechiness, liveliness, and valence.
+**Spotify Data:** Includes a combination of album and artist popularity data.
+
+These files are uploaded to the S3 staging bucket and processed using AWS Glue to transform and join them into a structured format in the data warehouse bucket. The data is then cataloged by AWS Glue Crawlers, making it queryable by AWS Athena and visualizable in AWS QuickSight.
 
 ## Architecture
 ![Slide_16_9_1 (2)](https://github.com/user-attachments/assets/8a6e9424-8cce-4f68-9bda-825a0e0551ec)
