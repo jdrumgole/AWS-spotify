@@ -19,7 +19,7 @@ These files are uploaded to the S3 staging bucket and processed using AWS Glue t
 ## S3 Buckets
 **Purpose**: Scalable object storage for data.  
 
-**Why I am Using It:**
+**Why I Use It:**
 
 Data Storage: Holds raw and processed data files, allowing scalable and durable storage.  
 Cost-Effective: Only pay for what you use, which is beneficial for large datasets.  
@@ -44,7 +44,7 @@ Data Cataloging: Uses Glue crawlers to create a metadata catalog that Athena can
 **Running the Glue Job**  
 
 **Purpose:** Execute the data transformation pipeline.  
-**Why We Use It:**  
+**Why I Use It:**  
 
 **Operationalize ETL:** Runs the defined ETL processes, transforming raw data into a structured format for analysis.  
 Resource Management: Defines computational resources required for the job, ensuring efficient execution.  
@@ -55,7 +55,7 @@ Job Execution and Monitoring: Runs the job and monitors its progress to ensure s
 ## Crawler
 **Purpose:** Automatically discover and catalog data in AWS S3.  
 
-**Why We Use It:**  
+**Why I Use It:**  
 
 **Metadata Generation:** Creates a data catalog with schema details, making it easier to query with Athena.  
 **Automation:** Eliminates the need for manual schema creation, ensuring that new data is automatically included in the catalog.  
@@ -82,7 +82,7 @@ Running the Crawler:
 
 ## Athena
 **Purpose:** Serverless interactive query service.  
-**Why We Use It:**  
+**Why I Use It:**  
 
 **Querying Data:** Allows SQL queries directly on data stored in S3 without needing to set up a database.  
 **Serverless:** No infrastructure to manage, with automatic scaling based on query complexity.  
@@ -94,7 +94,7 @@ Running the Crawler:
 **Query Execution:** Runs SQL queries to extract insights from the processed data in S3.  
 ## Quicksight
 **Purpose:** Business intelligence (BI) service for data visualization.  
-**Why We Use It:**  
+**Why I Use It:**  
 
 **Data Visualization:** Creates interactive dashboards and visualizations, enabling data-driven decision-making.  
 **Integration:** Connects seamlessly with Athena to visualize queried data.  
