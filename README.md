@@ -8,9 +8,19 @@ a table for our database then we'll be using AWS aena to
 query a data present in a table once everything is set up we can
 use AWS quick site to to do a visualization and to gain a business
 Insight out of our data.
-the data data set that will be
+the data set that will be using in this project is Spotify data set
+Insight out of our data.Tthe data set consist of five CSV files albums artist Spotify data Spotify
+features and Spotify tracks Spotify albums consist of details
+of all the albums tracks artist and the release date of the
+album Spotify artist consist of details of the artist name number of followers
+in the genre they sing in Spotify data consist of album ID album name album
+popularity artist Spotify features consist of
+danceability energy loudness mode
+speech liveliness and Valance of the music the tracks consist of track ID
+track popularity. the data is in raw format so lots of pre-processing will be
+required for this playlist I've already pre-processed the data and I'll be providing the data
+I preprocessed the five CSV files and built three CSV file out of it which is albums, artist,s and tracks. 
 
-using in this project is Spotify data set
 ## Architecture
 ![Slide_16_9_1 (2)](https://github.com/user-attachments/assets/8a6e9424-8cce-4f68-9bda-825a0e0551ec)
 
