@@ -5,11 +5,11 @@ In this project, we build an end-to-end data engineering pipeline using AWS serv
 
 In this project, we use several CSV files containing Spotify data for 2023:
 
-**Spotify Albums:** Contains details about albums, including album ID, album name, artist ID, and release date.
-**Spotify Artists:** Includes information about artists, such as artist ID, name, number of followers, and genre.
-**Spotify Tracks:** Lists track details, including track ID, track name, album ID, and track popularity.
-**Spotify Features:** Provides audio features of tracks like danceability, energy, loudness, mode, speechiness, liveliness, and valence.
-**Spotify Data:** Includes a combination of album and artist popularity data.
+**Spotify Albums:** Contains details about albums, including album ID, album name, artist ID, and release date.  
+**Spotify Artists:** Includes information about artists, such as artist ID, name, number of followers, and genre.  
+**Spotify Tracks:** Lists track details, including track ID, track name, album ID, and track popularity.  
+**Spotify Features:** Provides audio features of tracks like danceability, energy, loudness, mode, speechiness, liveliness, and valence.  
+**Spotify Data:** Includes a combination of album and artist popularity data.  
 
 These files are uploaded to the S3 staging bucket and processed using AWS Glue to transform and join them into a structured format in the data warehouse bucket. The data is then cataloged by AWS Glue Crawlers, making it queryable by AWS Athena and visualizable in AWS QuickSight.
 
