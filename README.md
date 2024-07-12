@@ -12,6 +12,8 @@ the data data set that will be
 
 using in this project is Spotify data set
 ## Architecture
+![Slide_16_9_1 (2)](https://github.com/user-attachments/assets/8a6e9424-8cce-4f68-9bda-825a0e0551ec)
+
 ## S3 Staging
 ## Glue ETL
 ## S3 DataWarehouse
